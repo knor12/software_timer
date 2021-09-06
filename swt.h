@@ -66,14 +66,14 @@ typedef struct
 /*
 *funtion to initialize the timer
 */ 
-  swt_err_t swt_init ();
+swt_err_t swt_init ();
 
  
  
 /*
 *called repeatadly to  process functions in the foreground, this needs to be within the context of main to execute functions that ready for execution
 */ 
-  swt_err_t swt_main ();
+swt_err_t swt_main ();
 
  
  

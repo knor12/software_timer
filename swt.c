@@ -28,7 +28,7 @@ swt_err_t swt_init( ){
        swt_task_t_arr[i].counter = swt_task_t_arr[i].timer_interval + swt_task_t_arr[i].timer_interval_offset; 
     }
     
-    /*call target specific initialization functions*/
+    /*call target specific initialization functions to get the 1mS timer going*/
     swt_init_cfg();
     
 }

@@ -53,31 +53,31 @@ void task_19mS(){
 
 /*define variables and call back functions_*/
 swt_task_t swt_task_t_arr[] = {
-    /*index = 0*/
+        /*index = 0*/
         { 
             .callback_function = task_1ms , 
             .timer_interval = 1,
             .timer_interval_offset = 1
         },
-    /*index = 1*/
+        /*index = 1*/
         { 
             .callback_function = task_2ms , 
             .timer_interval = 2,
             .timer_interval_offset = 0
         },
-    /*index = 2*/
+        /*index = 2*/
         { 
             .callback_function = task_3ms , 
             .timer_interval = 3,
             .timer_interval_offset = 1
         },
-    /*index = 3*/ 
+        /*index = 3*/ 
         { 
             .callback_function = task_10ms , 
             .timer_interval = 10,
             .timer_interval_offset = 3
         },
-     /*index = 4*/ 
+        /*index = 4*/ 
         { 
             .callback_function = task_exit , 
             .timer_interval = 50,
