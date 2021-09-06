@@ -51,7 +51,7 @@ void task_19mS(){
     printf("task_19mS called \n");
 }
 
-/*define variables and call back functions*/
+/*define variables and call back functions_*/
 swt_task_t swt_task_t_arr[] = {
     /*index = 0*/
         { 
