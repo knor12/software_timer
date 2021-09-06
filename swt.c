@@ -34,14 +34,14 @@ swt_err_t swt_init( ){
 }
 
 /*
-called repeatadly to  process functions in the, this is called in a loop in main()
+*called repeatadly to  process functions in the foregroung, this is called in a loop in main()
 */
 swt_err_t swt_main()
 {
     /*tasks*/
     for(int i = 0 ; i< swt_number_of_tasks ; i++)
     {
-        /*run all ready functions and reinitialize the counters*/
+        /*run all ready functions and reinitialize the counters and flags after they run*/
         if(
             (swt_task_t_arr[i].flag == ready))
             {
@@ -63,11 +63,16 @@ swt_err_t swt_main()
     
 }
 
-/*this funtion is to called in an interrupt context every 1mS*/
+/*this funtion is to be called in an interrupt context every 1mS*/
 void swt_callBack_1ms(void)
 {
+    /*increment the ticks counter*/
     swt_ticks++; 
     
+    /*rearm timer if oneshot timer is used*/
+    swt_reArm_cfg();
+    
+    /*use this as a piggyback to add code that is periodic and needs to run from interrupt context*/
     (void)swt_tick_cfg();
     
     for(int i = 0 ; i< swt_number_of_tasks ; i++)
@@ -88,7 +93,7 @@ void swt_callBack_1ms(void)
             }
     }
     
-    swt_reArm_cfg();
+
     
 }
 

@@ -23,7 +23,7 @@ swt_err_t swt_init_cfg();
 swt_err_t swt_reArm_cfg();
 
 /*
-*place any code you need to execute from interupt service routine
+*use this as a piggyback and place any code you need to execute from interrupt service routine.
 * this is optional
 */
 swt_err_t swt_tick_cfg(); 
