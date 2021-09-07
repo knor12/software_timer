@@ -1,5 +1,5 @@
 /*
- * swt.c
+ * swt.c : software timer implementation file
  *
  *  Created on: Sep. 06, 2021
  *      Author: n.kessa

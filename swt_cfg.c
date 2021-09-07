@@ -1,5 +1,5 @@
 /*
- * swt_cfg.c
+ * swt_cfg.c : software timer configuration implementation file
  *
  *  Created on: Sep. 06, 2021
  *      Author: n.kessa

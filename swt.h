@@ -1,5 +1,5 @@
 /*
- * swt.h
+ * swt.h : software timer header file provides API access file.
  *
  *  Created on: Sep. 06, 2021
  *      Author: n.kessa

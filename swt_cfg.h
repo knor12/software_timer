@@ -1,5 +1,5 @@
 /*
- * swt_cfg.h
+ * swt_cfg.h : Software timer configuration header file
  *
  *  Created on: Sep. 06, 2021
  *      Author: n.kessa
